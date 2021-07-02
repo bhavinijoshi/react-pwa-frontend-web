@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 1000px;
+}
+
+/* TOOL TIP decoration */
+.mySvgTooltip {
+  border: 1px solid white;
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: 60px;
+  width: 300px;
+  padding: 25px;
+  margin-left: 20px;
+  z-index: 100;
+  background: #000;
+  color: #fff;
+  -moz-border-radius: 5px; /* this works only in camino/firefox */
+  -webkit-border-radius: 5px; /* this is just for Safari */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Overrides for Material-UI */
+.MuiBreadcrumbs-ol {
+  margin-top: 48px important!;
+  margin-left: 10px important!;
+}
+
+/* causes fixed left hand drawer being stuck against left wall when menu pops open */
+.MuiDrawer-paperAnchorLeft {
+  left: auto important!;
+}
+
+/* speed dial button colorizing */
+.layersSpeedDialActionOn {
+  background-color: 'lime';
+}
+
+.layersSpeedDialActionOff {
+  background-color: 'gainsboro';
+}
+
+/* MAPBOX DECORATIONS */
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.control-panel {
+  position: fixed;
+  left: 'auto';
+  top: 60px;
+  /* left: 0px; */
+  max-width: 320px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 12px 24px;
+  margin: 20px;
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  text-transform: uppercase;
+  outline: none;
+  user-select: auto;
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+.control-panel::-webkit-scrollbar{
+  display: none;
+}
+
+.marker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.marker-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.cluster-marker {
+  color: #fff;
+  background: #1978c8;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tablegeofence {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tablegeofence td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+#tablegeofence tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablegeofence tr:hover {
+  background-color: #ddd;
+}
+
+#tablegeofence th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: rgb(8, 87, 161);
+  color: white;
+}
+
+/* fix double scroll bar */
+.Layout-content-2 {
+  overflow: hidden !important;
+}
+
+/* override ReactJS Link in the menu for home */
+.UnstyledMenuLink a:link {
+  text-decoration: none;
+}
+
+.UnstyledMenuLink a:visited {
+  text-decoration: none;
+}
+
+.UnstyledMenuLink a:hover {
+  text-decoration: underline;
+}
+
+.UnstyledMenuLink a:active {
+  text-decoration: underline;
+}
+::-webkit-scrollbar {
+  min-width: 12px;
+  width: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  height: 12px;
+  max-height: 12px;
+  background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2196f3;
+  border: none;
+  border-radius: 100px;
+  border: solid 3px #e5e5e5;
+  box-shadow: inset 0px 0px 3px #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* background: #b0b0b0; */
+  background: #196eb3;
+  box-shadow: inset 0px 0px 3px #888;
+}
+
+::-webkit-scrollbar-thumb:active {
+  /* background: #aaa; */
+  background: #196eb3;
+  box-shadow: inset 0px 0px 3px #7f7f7f;
+}
+
+/* ::-webkit-scrollbar-button {
+  display: block;
+  height: 26px;
+} */
