@@ -1,4 +1,4 @@
-import { geRoutesThatUserRoleCanAccess } from "view/shared/routes/constants";
+// import { geRoutesThatUserRoleCanAccess } from "view/shared/routes/constants";
 import Roles from 'security/roles';
 
 const roles = Roles.values;
@@ -82,7 +82,6 @@ export default class PermissionChecker {
     } else {
       return true
     }
-    return false;
   }
 
   get isAuthenticated() {

@@ -110,7 +110,7 @@ class LotoTicketsMobileView extends Component {
                                 <TableCell className={classes.tableBorder + ' ' + classes.width50} align="left">
                                     {row.url.map((value, key) => (
                                         <>
-                                            <a href={value.publicUrl} target="_blank">{value.name}</a>
+                                            <a href={value.publicUrl}>{value.name}</a>
                                             <span> {row.url.length === (key + 1) || row.url.length === 1 ? '' : ' , '}</span>
                                         </>
                                     ))}

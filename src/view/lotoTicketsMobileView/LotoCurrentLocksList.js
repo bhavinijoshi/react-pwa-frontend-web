@@ -161,7 +161,6 @@ class LotoCurrentLocksList extends Component {
     }
 
     handleSubmit = async (values) => {
-        const { currentUser } = this.props;
         const { editLockData } = this.state
         const { id, ...data } = this.schema.cast(values);
 
